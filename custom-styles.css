@@ -1,0 +1,126 @@
+/* Custom styles for 100 Most Influential Works website */
+
+/* Global styles and variables */
+:root {
+  --primary-bg: #ffffff;
+  --text-color: #333333;
+  --accent-color: #4a7bab;
+  --secondary-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --rank-color: #4a7bab;
+  --header-gradient-start: #3a5f8a;
+  --header-gradient-end: #2c4a6b;
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--secondary-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end)) !important;
+  padding: 2rem 0 !important;
+}
+
+header h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 1.25rem !important;
+  opacity: 0.9 !important;
+}
+
+/* Card and container styling */
+.container {
+  max-width: 1200px !important;
+}
+
+.bg-white {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px !important;
+}
+
+/* Table styling */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table th {
+  font-weight: 600;
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-color);
+  padding: 1rem 0.75rem !important;
+}
+
+table td {
+  padding: 0.75rem !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Rank number styling */
+td:first-child {
+  font-weight: 700;
+  color: var(--rank-color);
+  font-size: 1.1rem;
+}
+
+/* Work title styling */
+td:nth-child(2) {
+  font-weight: 600;
+}
+
+/* Button styling */
+.button, button {
+  background-color: var(--accent-color) !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.25rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.button:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 123, 171, 0.2);
+}
+
+/* Bingo card styling */
+.grid {
+  gap: 0.5rem !important;
+}
+
+.grid > div {
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+.grid > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ad spaces */
+.bg-gray-200 {
+  background-color: #f0f2f5 !important;
+  border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2c3e50 !important;
+  padding: 3rem 1rem !important;
+}
